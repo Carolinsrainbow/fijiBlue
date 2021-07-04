@@ -37,3 +37,13 @@ async function showStock() {
 console.log(showStock);
 
 // Ejecutar venta
+
+const ventaEfectiva = (nombre, stock) => {
+  try {
+    if (habemusStock(nombre, stock)) {
+      console.log(habemusStock);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
