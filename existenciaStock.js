@@ -6,14 +6,14 @@ const inventarios = [
   { nombre: "chirimoya", precio: 3000, stock: 1 },
   { nombre: "palta", precio: 6000, stock: 12 },
 ];
-console.log(inventarios);
+//console.log(inventarios);
 
 // Ejemplo de compra
 const ordenCompra = {
-  nombre: "papaya",
+  nombre: "palta",
   cantidad: 1,
 };
-console.log(ordenCompra);
+//console.log(ordenCompra.nombre)
 
 // Revisión de Stock
 const habemusStock = () => {
@@ -26,8 +26,12 @@ const habemusStock = () => {
         )
       );
     }, 250);
+    console.log(
+      ordenCompra.nombre === inventario.nombre && inventario.stock > 0
+    );
   });
 };
+habemusStock();
 console.log(habemusStock());
 
 async function showStock() {
